@@ -5,7 +5,7 @@ import json
 import uuid
 
 # API Base URL
-API_BASE = "http://localhost:8000/api/v1"
+API_BASE = os.getenv("API_BASE_URL", "http://localhost:8000/api/v1")
 
 # Timeouts
 DEFAULT_TIMEOUT = 15
